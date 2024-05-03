@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>2048</title>
+</head>
+<body>
+  
+    <div class="start">
+        <div class="left">
+            <span class="heading">2048</span>
+            <p class="game-intro">
+                Join the tiles, get to <strong>2048!</strong>
+            </p>
+        </div>
+        <div class="right">
+            <div class="scores">
+                <div>
+                    <div class="titles">Score</div>
+                    <div id="score">0</div>
+                </div>
+                <div>
+                    <div class="titles">Best</div>
+                    <div id="best">0</div>
+                </div>
+            </div>
+            <div class="newGames">
+                <input type="button" value="New Game" class="newGame" id="newGame">
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="main"></div>
+        <section></section>
+        <article>
+            <h1>Game Over!</h1>
+            <input type="button" value="Try again" class="newGame" id="tryAgain">
+        </article>
+    </main>
+    <div class="explanation">
+        <p class="game-explanation">
+            <strong class="important">How to play:</strong>
+            <span class="game-explanation-mouse">Use your <strong>arrow keys</strong></span>
+            <span class="game-explanation-touch">Swipe with <strong>your fingers</strong></span>
+            to move the tiles. Tiles with the same number
+            <strong>merge into one</strong> when they touch. Add them up to reach
+            <strong>2048!</strong><br>
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

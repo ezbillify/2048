@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-image:url(abc.jpg);
+    background-repeat:none;
+    background-size:auto;
+}
+.start{
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    align-items: center;
+    
+}
+.scores{
+    display: flex;
+    margin: 10px;
+}
+.scores>div{
+    text-align: center;
+    background-color: #bbada0;
+    padding: 5px;
+    width: 100px;
+    margin: 5px;
+    border-radius: 5px;  
+}
+.scores>div>div{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 900;
+}
+.scores .titles{
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.left{
+    margin:20px;
+    color: #ffffff;
+}
+.heading{
+    text-align: center;
+    font-size: 70px;
+    font-weight: 900;
+}
+.game-intro{
+    font-size: 18px;
+}
+a{
+    color: #ffffff;
+    font-weight: bold;
+}
+main{
+    margin: 120px auto;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+section{
+    position: absolute;
+    font-size: 50px;
+    font-weight: 900;
+    width: 100%;
+    height: 100%;
+}
+.main{
+    background-color: #5c5f5a;
+    padding: 10px;
+    font-size: 45px;
+    font-weight: 900;
+    position: relative;
+}
+.rows{
+    display: flex;
+}
+.cells,section>div{
+    margin:10px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    transition: all 0.1s;
+    text-align: center;
+    background-color: #ffffff;
+}
+section>div{
+    margin: 0;
+    position: absolute;
+    transition: all 0.1s;
+}
+.explanation{
+    width: 500px;
+    margin: auto;
+}
+.game-explanation{
+    text-align: justify;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 300;
+}
+.newGames{
+    text-align: right;
+    padding: 20px;
+}
+.newGame{
+    background: #ffffff;
+    border-radius: 3px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 900;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+}
+article{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: none;
+    color: #ffffff; 
+}
+article.h1{
+    color: #fff;
+}
+article>*{
+    margin: 10px auto;
+}
